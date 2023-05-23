@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer p-10 bg-blue text-base-content">
+    <footer className="footer p-10 bg-blue text-base-content max-w-screen ">
       <div>
         <span className="footer-title">Contactanos tu caso</span>
         <a className="link link-hover">Branding</a>

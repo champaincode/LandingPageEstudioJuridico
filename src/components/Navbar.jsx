@@ -7,7 +7,7 @@ function Navbar() {
   const [selectedSection, setSelectedSection] = useState("inicio");
   return (
     <div
-      className={`navbar sticky top-0 duration-300 h-12 min-h-0 z-50 ${
+      className={`navbar sticky max-w-screen  top-0 duration-300 h-12 min-h-0 z-50 ${
         scrollPosition > 75
           ? "bg-gradient-to-r from-blue-100 to-cyan-500"
           : "bg-gray"
