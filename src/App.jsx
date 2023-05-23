@@ -1,10 +1,17 @@
 import { useState } from "react";
-import "./App.css";
-
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import HeroOne from "./components/HeroOne";
+import Servicios from "./components/Servicios";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <h1>HOLA</h1>
+      <Navbar />
+      <Hero />
+      <HeroOne />
+      <Servicios />
+      <Footer />
     </>
   );
 }
