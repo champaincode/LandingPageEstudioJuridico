@@ -24,30 +24,53 @@ const Chatbot = () => {
   return (
     <ChatBot
       floating={true}
+      botDelay={3000}
       steps={[
         {
           id: "1",
-          message: "What number I am thinking?",
+          message: "Hola, ¿cual es tu nombre?",
           trigger: "2",
         },
         {
           id: "2",
-          options: [
-            { value: 1, label: "Number 1", trigger: "4" },
-            { value: 2, label: "Number 2", trigger: "3" },
-            { value: 3, label: "Number 3", trigger: "3" },
-          ],
+          user: true,
+          trigger: "3",
         },
         {
           id: "3",
-          message: "Wrong answer, try again.",
-          trigger: "2",
-          end: true,
+          message: "Hola {previousValue}, ¿En que puedo ayudarte?!",
+          trigger: "4",
         },
         {
           id: "4",
-          message: "Awesome! You are a telepath!",
-          end: true,
+          options: [
+            {
+              value: 1,
+              label: "¿En que dirección esta el estudio?",
+              trigger: "5",
+            },
+            {
+              value: 2,
+              label: "¿Cuando puedo reservar una cita?",
+              trigger: "6",
+            },
+            { value: 3, label: "¿El precio es en ARS o en USD?", trigger: "7" },
+          ],
+        },
+        {
+          id: "5",
+          message: "El estudio queda en Sarmiento al 520",
+          trigger: "1",
+        },
+        {
+          id: "6",
+          message: "Puedes reservar una cita, en nuestro calendly",
+          trigger: "2",
+        },
+        {
+          id: "7",
+          message: "El precio de la consulta es en pesos argentinos",
+          trigger: "3",
         },
       ]}
     />
