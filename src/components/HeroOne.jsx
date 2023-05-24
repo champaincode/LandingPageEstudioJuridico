@@ -28,10 +28,10 @@ function HeroOne() {
                   alt="Estudio"
                 />
               </div>
-              <div className="w-full lg:w-1/2 flex flex-col md:flex justify-center items-start p-5">
+              <div className="w-full  p lg:w-1/2 flex flex-col md:flex justify-center items-start p-5">
                 <h1
                   id="elegirnos"
-                  className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-7xl py-5 mt-6 lg:mt-0 font-bold text-stone font-sans"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl py-5 mt-6 lg:mt-0 font-bold text-stone font-sans"
                 >
                   ¿POR QUE ELEGIRNOS ?
                 </h1>

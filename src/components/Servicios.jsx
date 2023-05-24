@@ -10,7 +10,7 @@ const Card = ({ title, description }) => (
 
 function Servicios() {
   return (
-    <div className=" h-[100vh] bg-gray ">
+    <div className=" h-[1000px] lg:h-[100vh] md:h-[100vh] bg-gray ">
       <div className="container mx-auto text-center ">
         <h2 className="text-4xl font-bold mb-4 text-center text-blue-100 py-2 ">
           Servicios
