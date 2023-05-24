@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div
       id="inicio"
-      className="hero bg-gray lg:h-[800px] h-[110vh] max-w-screen  overflow-hidden"
+      className="hero bg-gray lg:h-[100vh] h-[120vh] max-w-screen  overflow-hidden"
     >
       <div className="hero-content   flex flex-col sm:flex-row-reverse justify-between md:flex-row-reverse  lg:h-[800px] h-[680px]">
         <div className="w-full  h-2/4  lg:w-full 2xl:h-3/4 lg:3/4 xl:w-3/4 md:h-1/2 sm:h-1/2">
