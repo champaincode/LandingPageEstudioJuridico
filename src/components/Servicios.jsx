@@ -1,6 +1,6 @@
 import React from "react";
 const Card = ({ title, description }) => (
-  <div className="max-w-sm rounded overflow-hidden shadow-lg h-64">
+  <div className="max-w-sm rounded overflow-hidden shadow-lg h-64 lg:h-[40vh]">
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-2">{title}</div>
       <p className="text-gray-700 text-base">{description}</p>
@@ -10,7 +10,7 @@ const Card = ({ title, description }) => (
 
 function Servicios() {
   return (
-    <div className=" h-[1000px] lg:h-[100vh] md:h-[100vh] bg-gray ">
+    <div className=" h-[100vh] md:h-[100vh]  lg:h-[100vh]  md:h-[100vh] bg-gray ">
       <div className="container mx-auto text-center ">
         <h2 className="text-4xl font-bold mb-4 text-center text-blue-100 py-2 ">
           Servicios

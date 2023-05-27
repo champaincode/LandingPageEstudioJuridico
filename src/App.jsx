@@ -13,7 +13,7 @@ function App() {
       <HeroOne />
       <Servicios />
       <ChatBot />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
