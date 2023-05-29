@@ -1,20 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+
 const Card = ({ title, description }) => (
-  <div className="max-w-sm rounded overflow-hidden shadow-lg h-64 lg:h-[40vh]">
+  <motion.div
+    variants={fadeIn("up", 0.3)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{ once: false, amount: 0.3 }}
+    className="max-w-sm rounded overflow-hidden shadow-lg h-64 lg:h-[40vh]"
+  >
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-2">{title}</div>
       <p className="text-gray-700 text-base">{description}</p>
     </div>
-  </div>
+  </motion.div>
 );
 
 function Servicios() {
   return (
-    <div className=" h-[100vh] md:h-[100vh]  lg:h-[100vh]  md:h-[100vh] bg-gray ">
+    <div className=" h-[350vh] md:h-[120vh]  lg:h-[120vh]  md:h-[100vh] bg-gray ">
       <div className="container mx-auto text-center ">
-        <h2 className="text-4xl font-bold mb-4 text-center text-blue-100 py-2 ">
+        <motion.h2
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-4xl font-bold mb-4 text-center text-blue-100 py-2 "
+        >
           Servicios
-        </h2>
+        </motion.h2>
         <div className="flex flex-wrap -mx-2" id="servicios">
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
             <Card
@@ -47,9 +62,15 @@ function Servicios() {
           </div>
         </div>
 
-        <h3 className="text-3xl font-bold mt-8 mb-4 text-blue-100 py-2">
+        <motion.h3
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-3xl font-bold mt-8 mb-4 text-blue-100 py-2"
+        >
           Otras soluciones personalizadas
-        </h3>
+        </motion.h3>
         <div className="flex flex-wrap -mx-2">
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
             <Card
