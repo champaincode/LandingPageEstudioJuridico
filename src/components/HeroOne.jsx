@@ -27,11 +27,11 @@ function HeroOne() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-full  h-2/4 xl:h-60 lg:w-full 2xl:h-3/4 lg:3/4 xl:w-3/4 md:h-1/2 sm:h-1/2"
+                className="w-full    xl:h-3/4   lg:w-full 2xl:h-3/4 xl:w-3/4"
               >
                 <img
                   src={ImageHero}
-                  className="h-[45vh] lg:h-[80vh]   xl:h-[300px] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  2xl:w-full object-cover"
+                  className="h-[100vh] lg:h-[300px]   xl:h-[500px] md:h-[300px] lg:w-full 2xl:h-full lg:mt-12  2xl:w-full object-cover"
                   alt="Estudio"
                 />
               </motion.div>
