@@ -33,11 +33,12 @@ function Navbar() {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className=" menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 rounded-box w-52"
           >
-            <li>
+            <li className="text-center">
               <Link
                 activeClass="active"
+                className="active:bg-gradient-to-r from-blue-100 to-cyan-500 rounded-full active:text-white text-stone"
                 smooth={true}
                 spy={true}
                 offset={-200}
@@ -46,20 +47,22 @@ function Navbar() {
                 Inicio
               </Link>
             </li>
-            <li>
+            <li className="text-center">
               <Link
                 activeClass="active"
+                className="active:bg-gradient-to-r from-blue-100 to-cyan-500 rounded-full active:text-white text-stone"
                 smooth={true}
                 spy={true}
-                offset={-200}
+                offset={0}
                 to="elegirnos"
               >
                 ¿Por que elegirnos?
               </Link>
             </li>
-            <li>
+            <li className="text-center">
               <Link
                 activeClass="active"
+                className="active:bg-gradient-to-r from-blue-100 to-cyan-500 rounded-full active:text-white text-stone"
                 smooth={true}
                 spy={true}
                 offset={-200}

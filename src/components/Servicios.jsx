@@ -24,7 +24,7 @@ function Servicios() {
   //   threshold: 0.5,
   // });
   return (
-    <section className=" h-[350vh] xl:h-[150vh] md:h-[130vh]  lg:h-[130vh]   bg-gray mb-5 ">
+    <section className=" h-[400vh] xl:h-[150vh] md:h-[130vh]  lg:h-[130vh]   bg-gray mb-5 ">
       <div>
         <div className="container mx-auto text-center  ">
           <motion.h2
