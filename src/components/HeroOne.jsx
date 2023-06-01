@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ImageHero from "../assets/Juridico.png";
@@ -15,8 +15,11 @@ function HeroOne() {
   };
 
   return (
-    <div className="hero h-[100vh] w-[100%] bg-gradient-to-r from-blue-100 to-cyan-500  overflow-hidden flex justify-start 2xl:justify-center 2xl:flex relative 2xl:relative">
-      <div id="elegirnos" className="carousel">
+    <div
+      id="elegirnos"
+      className="hero h-[100vh] w-[100%] bg-gradient-to-r from-blue-100 to-cyan-500  overflow-hidden flex justify-start 2xl:justify-center 2xl:flex relative 2xl:relative"
+    >
+      <div className="carousel">
         <div
           className={`carousel-item ${activeSlide === 0 ? "active" : "hidden"}`}
         >
@@ -40,7 +43,7 @@ function HeroOne() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-full  p lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
+                className="w-full lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
               >
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl py-5 mt-6 lg:mt-0 font-bold text-stone font-sans">
                   ¿POR QUE ELEGIRNOS ?
@@ -64,7 +67,13 @@ function HeroOne() {
           className={`carousel-item ${activeSlide === 1 ? "active" : "hidden"}`}
         >
           <div className="hero-content  flex-col h-[680px]  justify-start">
-            <div className=" w-[90vw] lg:w-full lg:w-1/2  flex-col md:flex justify-center items-start  ">
+            <motion.div
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className=" w-[90vw]  lg:w-1/2  flex-col md:flex justify-center items-start  "
+            >
               <h1 className="text-4xl lg:text-7xl py-5 font-bold text-white font-sans">
                 Aseguramos tu <br />
                 escrituración
@@ -84,9 +93,9 @@ function HeroOne() {
                 mismo y permítenos ocuparnos de cada detalle de forma
                 profesional. 😊📞
               </p>
-            </div>
-            <div className="2xl:w-[680px] 2xl:bg-gray "></div>
+            </motion.div>
           </div>
+          <div className="2xl:w-[400px] lg:w-[500px] "></div>
         </div>
         <button
           onClick={nextSlide}

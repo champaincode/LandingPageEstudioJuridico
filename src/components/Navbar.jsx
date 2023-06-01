@@ -100,7 +100,7 @@ function Navbar() {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={0}
               to="elegirnos"
               className={`link mr-4 ${
                 scrollPosition > 100 ? "text-gray" : "text-stone"
@@ -117,7 +117,7 @@ function Navbar() {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={-100}
               to="servicios"
               className={`link ${
                 scrollPosition > 100 ? "text-gray" : "text-stone"
