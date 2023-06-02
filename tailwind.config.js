@@ -30,6 +30,13 @@ export default {
       stone: "#0c0a09",
       white: "#ffffff",
     },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+    },
 
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],

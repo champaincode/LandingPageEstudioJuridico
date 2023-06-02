@@ -10,10 +10,10 @@ const Card = ({ title, description }) => (
     initial="hidden"
     whileInView={"show"}
     viewport={{ once: false, amount: 0.3 }}
-    className="max-w-sm rounded overflow-hidden shadow-lg servicios h-64 lg:h-[40vh] xl:h-[45vh] "
+    className="max-w-sm  overflow-hidden shadow-lg servicios h-64 lg:h-[40vh] xl:h-[45vh] bg-white rounded-lg"
   >
     <div className="px-6 py-4 ">
-      <div className="font-bold text-xl mb-2">{title}</div>
+      <div className="font-bold text-xl mb-2 text-blue-100">{title}</div>
       <p className="text-gray-700 text-base">{description}</p>
     </div>
   </motion.div>
@@ -24,7 +24,7 @@ function Servicios() {
   //   threshold: 0.5,
   // });
   return (
-    <section className=" h-[400vh] xl:h-[150vh] md:h-[130vh]  lg:h-[130vh]   bg-gray mb-5 ">
+    <section className="h-[400vh] xl:h-[150vh] md:h-[130vh]  lg:h-[130vh]   bg-gray mb-5 ">
       <div>
         <div className="container mx-auto text-center  ">
           <motion.h2
@@ -40,30 +40,39 @@ function Servicios() {
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Regulacion de situacion dominal de inmubles (CABA Y GBA)"
-                description="Nos encargamos de gestionar y resolver los trámites necesarios
-            para regularizar la situación legal de los inmuebles"
+                description="Nos encargamos de gestionar y
+                resolver los trámites necesarios
+                para regularizar la situación legal
+                de tus inmuebles.
+                "
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Escritura notarial"
-                description="Realizamos documentos legales que brinda protección y validez a los acuerdos y transacciones legales"
+                description="Realizamos documentos
+                legales para brindar
+                protección y validez a los
+                acuerdos y las transacciones
+                legales,"
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Escritura judicial"
-                description="Desarrollamos y llevamos a delante documentos legales para
-            registar y documentar los actos y decisiones tomados por el juez
-            para proteger tus derechos"
+                description="Registramos los actos y las
+                decisiones del juez en documentos
+                legales para proteger tus derechos."
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Usucapion"
-                description="Llevamos adelante la obtención de tu propiedad inmueble cuando ha
-              sido ocupada y utilizada por un tiempo prolongado, tenes derechos
-              para ser dueño/a."
+                description="Llevamos adelante la
+                obtención de tu propiedad
+                inmueble cuando ha sido
+                ocupada y utilizada por un
+                tiempo prolongado."
               />
             </div>
           </div>
@@ -81,34 +90,45 @@ function Servicios() {
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Certificado de dominio"
-                description="Otorgamos documento legal que establece y confirma la propiedad de
-            un inmueble, proporcionando la evidencia de quién es el legítimo
-            dueño de la propiedad."
+                description="Otorgamos documentación
+                legal para establecer y
+                confirmar la propiedad de un
+                inmueble, proporcionando así
+                la evidencia de quién es el
+                legítimo dueño de la
+                propiedad."
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Partida de defuncion"
-                description=" Es necesaria para realizar trámites legales y administrativos
-              relacionados con el fallecimiento, como la sucesión de bienes y la
-              cancelación de documentos y servicios a nombre de la persona
-              fallecida."
+                description="Necesaria para realizar
+                trámites legales y
+                administrativos relacionados
+                con el fallecimiento, como la
+                sucesión de bienes y la
+                cancelación de documentos
+                y servicios a nombre de la
+                persona fallecida."
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Partida de divorcio"
-                description="En términos de bienes e inmuebles porque permite establecer la
-              distribución equitativa de los activos y propiedades adquiridos
-              durante el matrimonio."
+                description="Garantizamos la distribución
+                equitativa de los activos y
+                propiedades adquiridos
+                durante el matrimonio."
               />
             </div>
             <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2">
               <Card
                 title="Documentacion para extranjeros"
-                description="Ofrecemos servicios relacionados con diferentes tipos de
-              documentos, como la obtención de documentos de residencia y la
-              gestión de pedidos de antecedentes penales para extranjeros."
+                description="Llevamos a cabo la
+                documentación de
+                residencia y la gestión de
+                pedidos de antecedentes
+                penales para extranjeros."
               />
             </div>
           </div>

@@ -5,17 +5,17 @@ function Footer() {
     <footer className="footer p-10 bg-blue text-base-content max-w-screen ">
       <div>
         <span className="footer-title">Servicios</span>
-        <a className="link">Escrituras de propiedad</a>
-        <a className="link">Usurpación de inmuebles</a>
-        <a className="link">Título de propiedad</a>
-        <a className="link">Registro de inmueble </a>
-        <a className="link">Usurpación</a>
+        <a className="linkfooter">Escrituras de propiedad</a>
+        <a className="linkfooter">Usurpación de inmuebles</a>
+        <a className="linkfooter">Título de propiedad</a>
+        <a className="linkfooter">Registro de inmueble </a>
+        <a className="linkfooter">Usurpación</a>
       </div>
       <div>
-        <a className="link mt-9">Certificado de dominio</a>
-        <a className="link">Partidas de defunción</a>
-        <a className="link">Partidas de divorcio </a>
-        <a className="link">Documentación extranjeros </a>
+        <a className="linkfooter mt-9">Certificado de dominio</a>
+        <a className="linkfooter">Partidas de defunción</a>
+        <a className="linkfooter">Partidas de divorcio </a>
+        <a className="linkfooter">Documentación extranjeros </a>
       </div>
       <div>
         <span className="footer-title">Dirección</span>
