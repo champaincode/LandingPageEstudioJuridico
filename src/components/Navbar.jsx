@@ -103,7 +103,7 @@ function Navbar() {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-140}
+              offset={190}
               to="elegirnos"
               className={`link mr-4 ${
                 scrollPosition > 100 ? "text-gray" : "text-stone"

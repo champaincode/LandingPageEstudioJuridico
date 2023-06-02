@@ -7,10 +7,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 function HeroOne() {
-  // Estado para controlar el elemento del carrusel activo
   const [activeSlide, setActiveSlide] = useState(0);
 
-  // Función para avanzar al siguiente elemento del carrusel
   const nextSlide = () => {
     setActiveSlide((prevSlide) => (prevSlide + 1) % 3);
   };

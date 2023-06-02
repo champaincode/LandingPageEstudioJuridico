@@ -12,17 +12,17 @@ function HeroOne() {
 
   // Función para avanzar al siguiente elemento del carrusel
   const nextSlide = () => {
-    setActiveSlide((prevSlide) => (prevSlide + 1) % 2);
+    setActiveSlide((prevSlide) => (prevSlide + 1) % 3);
   };
 
   return (
     <div className="hero h-[160vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[100vh] w-[100%] bg-gradient-to-r from-blue-100 to-cyan-500  overflow-hidden flex justify-start 2xl:justify-center 2xl:flex relative 2xl:relative">
-      <div className="carousel">
+      <div className="carousel" id="elegirnos">
         <div
           className={`carousel-item ${activeSlide === 0 ? "active" : "hidden"}`}
         >
           <div className="hero  lg:h-[900px] h-[180vh] w-[100%] overflow-hidden">
-            <div className="hero-content w-screen  flex flex-col-reverse sm:flex-col-reverse justify-between md:flex-row-reverse  lg:h-[800px] h-[750px]">
+            <div className="hero-content w-screen  xl:w-[80%]  2xl:w-[100%] flex flex-col-reverse sm:flex-col-reverse justify-between md:flex-row-reverse  lg:h-[800px] h-[750px]">
               <motion.div
                 variants={fadeIn("right", 0.5)}
                 initial="hidden"
@@ -41,12 +41,9 @@ function HeroOne() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-full  lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
+                className="w-full xl:w-[110vw] lg:w-1/2   flex flex-col md:flex justify-center items-start p-5"
               >
-                <h1
-                  id="elegirnos"
-                  className="text-3xl 2xl:text-6xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl  py-5 mt-6 lg:mt-0 font-bold font-sans"
-                >
+                <h1 className="text-3xl 2xl:text-6xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl  py-5 mt-6 lg:mt-0 font-bold font-sans">
                   ¿POR QUE ELEGIRNOS ?
                 </h1>
                 <h3 className="text-lg lg:text-2xl xl:text-2xl 2xl:text-3xl text-white font-medium  font-sans">
@@ -73,13 +70,13 @@ function HeroOne() {
           className={`carousel-item ${activeSlide === 1 ? "active" : "hidden"}`}
         >
           <div className="hero  lg:h-[900px] h-[180vh] w-[100%] overflow-hidden">
-            <div className="hero-content w-screen  flex flex-col-reverse sm:flex-col-reverse justify-between md:flex-row-reverse  lg:h-[800px] h-[750px]">
+            <div className="hero-content w-screen  xl:w-[80%]  flex flex-col-reverse sm:flex-col-reverse justify-between md:flex-row-reverse  lg:h-[800px] h-[750px]">
               <motion.div
                 variants={fadeIn("right", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-full   lg:w-full 2xl:h-3/4 xl:w-3/4"
+                className="w-full     lg:w-full 2xl:h-3/4 "
               >
                 <img
                   src={ImageHero}
@@ -92,7 +89,7 @@ function HeroOne() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-full 2xl:w-[130vw]  lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
+                className="w-full 2xl:w-[130vw] xl:w-[160vw] lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
               >
                 <span className="text-3xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl 2xl:text-6xl py-5 mt-6 lg:mt-0 font-bold font-sans">
                   Todas las reglamentaciones al día
@@ -128,6 +125,39 @@ function HeroOne() {
             </div>
           </div>
         </div>
+        <div
+          className={`carousel-item ${activeSlide === 2 ? "active" : "hidden"}`}
+        >
+          <div className="hero  lg:h-[900px] h-[180vh] w-[100%] overflow-hidden">
+            <div className="hero-content  xl:w-[80%] 2xl:w-[100%] flex flex-col-reverse sm:flex-col-reverse justify-between md:flex-row-reverse  lg:h-[800px] h-[750px]">
+              <motion.div
+                variants={fadeIn("right", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className="w-full  2xl:w-[10%]  xl:w-[10%] lg:w-full 2xl:h-3/4 xl:h-3/4 "
+              >
+                <img
+                  src={ImageHero}
+                  className="h-[28vh] imagen-transparente lg:h-[80vh] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  xl:h-full object-cover"
+                  alt="Estudio"
+                />
+              </motion.div>
+              <motion.div
+                variants={fadeIn("up", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className="w-[100vw]   2xl:w-[130vw]   xl:w-[130vw]  lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
+              >
+                <span className="text-3xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl 2xl:text-6xl py-5 mt-6 lg:mt-0 font-bold font-sans">
+                  Más de 15 años de experiencia <br /> en propiedades inmuebles
+                </span>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
         <button
           onClick={nextSlide}
           className="bg-yellow-400 rounded-full p-4 px-5 absolute mt-8 bottom-13 top-12  right-5   sm:top-4 md:top-[50vh]  xl:top-[50vh]   2xl:top-[50vh]    "
