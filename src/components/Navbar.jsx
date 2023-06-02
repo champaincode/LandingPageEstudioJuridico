@@ -88,7 +88,7 @@ function Navbar() {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={50}
               to="inicio"
               className={`link mr-4  ${
                 scrollPosition > 100 ? "text-gray" : "text-stone"
@@ -103,7 +103,7 @@ function Navbar() {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={-140}
               to="elegirnos"
               className={`link mr-4 ${
                 scrollPosition > 100 ? "text-gray" : "text-stone"

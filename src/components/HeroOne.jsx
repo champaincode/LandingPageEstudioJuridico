@@ -45,21 +45,21 @@ function HeroOne() {
               >
                 <h1
                   id="elegirnos"
-                  className="text-3xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl 2xl:text-6xl py-5 mt-6 lg:mt-0 font-bold font-sans"
+                  className="text-3xl 2xl:text-6xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl  py-5 mt-6 lg:mt-0 font-bold font-sans"
                 >
                   ¿POR QUE ELEGIRNOS ?
                 </h1>
-                <h3 className="text-xl lg:text-2xl xl:text-2xl text-white font-medium font-sans">
+                <h3 className="text-lg lg:text-2xl xl:text-2xl 2xl:text-3xl text-white font-medium  font-sans">
                   Somos un estudio juridico especilizado en tramites de la
                   propiedad inmuble en CABA & Provincia de Buenos Aires
                 </h3>
-                <p className="text-1xl lg:text-lg py-5 font-lato font-regular text-white">
+                <p className="text-1xl lg:text-lg py-5 2xl:text-2xl font-lato font-regular text-white">
                   Entendemos que cada caso es único y requiere atención
                   personalizada. Nuestros servicios se adaptan a las necesidades
                   individuales de cada cliente, ofreciendo soluciones
                   especializadas y orientadas a objetivos concretos.
                 </p>
-                <p className="text-1xl lg:text-lg font-lato font-regular text-white">
+                <p className="text-1xl lg:text-lg font-lato  2xl:text-2xl font-regular text-white">
                   Queremos garantizarte tranquilidad y bienestar al ocuparnos de
                   tus asuntos legales. Por esa razón, nos comprometemos a
                   mantenerte informado de tu caso y gestionar tus documentos a
@@ -83,7 +83,7 @@ function HeroOne() {
               >
                 <img
                   src={ImageHero}
-                  className="h-[30vh] imagen-transparente lg:h-[80vh] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  2xl:w-full object-cover"
+                  className="h-[28vh] imagen-transparente lg:h-[80vh] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  2xl:w- object-cover"
                   alt="Estudio"
                 />
               </motion.div>
@@ -92,31 +92,34 @@ function HeroOne() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="w-full   lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
+                className="w-full 2xl:w-[130vw]  lg:w-1/2 flex flex-col md:flex justify-center items-start p-5"
               >
-                <h1 className="text-3xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl 2xl:text-6xl py-5 mt-6 lg:mt-0 font-bold font-sans">
-                  Todas las <br /> reglamentaciones al día
-                </h1>
-                <h3 className="text-lg lg:text-2xl xl:text-2xl text-white font-medium font-sans">
+                <span className="text-3xl text-white lg:text-4xl sm:text-3xl md:text-5xl  xl:text-5xl 2xl:text-6xl py-5 mt-6 lg:mt-0 font-bold font-sans">
+                  Todas las reglamentaciones al día
+                </span>
+                <h2 className="text-lg mb-6 mt-5 lg:text-2xl xl:text-2xl 2xl:text-3xl text-white font-medium font-sans">
+                  ¡Solucioná la situación de tu propiedad ahora mismo!
+                </h2>
+                <h4 className="text-lg lg:text-2xl xl:text-2xl 2xl:text-2xl text-white font-medium font-sans">
                   Si todavía no lograste poner en regla tus inmuebles, estás a
                   tiempo de hacerlo. Nuestro equipo profesional de abogados se
                   encargará de:
-                </h3>
+                </h4>
                 <ul className="list-disc text-white">
-                  <li className="custom-disc">
-                    <p className="text-1xl lg:text-lg py-5 font-lato font-regular text-white">
+                  <li className="custom-disc ml-5">
+                    <p className="text-1xl lg:text-lg mt-5 mb-2 font-lato font-regular 2xl:text-2xl text-white">
                       Gestionar en tiempo y forma los trámites necesarios para
                       legalizar tus inmuebles.
                     </p>{" "}
                   </li>
-                  <li className="custom-disc">
-                    <p className="text-1xl  mb-3 lg:text-lg font-lato font-regular text-white">
+                  <li className="custom-disc ml-5">
+                    <p className="text-1xl  mb-2 lg:text-lg font-lato font-regular 2xl:text-2xl text-white">
                       Realizar la documentación legal para brindarte protección
                       y tranquilidad.
                     </p>
                   </li>
-                  <li className="custom-disc">
-                    <p className="text-1xl lg:text-lg font-lato font-regular text-white">
+                  <li className="custom-disc ml-5">
+                    <p className="text-1xl lg:text-lg font-lato  2xl:text-2xl font-regular text-white">
                       Garantizar tus derechos como propietario.
                     </p>
                   </li>
@@ -127,7 +130,7 @@ function HeroOne() {
         </div>
         <button
           onClick={nextSlide}
-          className="bg-yellow-400 rounded-full p-4 px-5 absolute mt-2 bottom-13 top-12  right-5   sm:top-4 md:top-[50vh]  xl:top-[50vh]   2xl:top-[50vh]    "
+          className="bg-yellow-400 rounded-full p-4 px-5 absolute mt-8 bottom-13 top-12  right-5   sm:top-4 md:top-[50vh]  xl:top-[50vh]   2xl:top-[50vh]    "
         >
           {" "}
           <FontAwesomeIcon icon={faArrowRight} />
