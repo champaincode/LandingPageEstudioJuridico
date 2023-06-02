@@ -16,7 +16,7 @@ function HeroOne() {
   };
 
   return (
-    <div className="hero h-[150vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[100vh] w-[100%] bg-gradient-to-r from-blue-100 to-cyan-500  overflow-hidden flex justify-start 2xl:justify-center 2xl:flex relative 2xl:relative">
+    <div className="hero h-[160vh] lg:h-[120vh] xl:h-[120vh] 2xl:h-[100vh] w-[100%] bg-gradient-to-r from-blue-100 to-cyan-500  overflow-hidden flex justify-start 2xl:justify-center 2xl:flex relative 2xl:relative">
       <div className="carousel">
         <div
           className={`carousel-item ${activeSlide === 0 ? "active" : "hidden"}`}
