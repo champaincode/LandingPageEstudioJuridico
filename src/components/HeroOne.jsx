@@ -83,7 +83,7 @@ function HeroOne() {
               >
                 <img
                   src={ImageHero}
-                  className="h-[45vh] imagen-transparente lg:h-[80vh] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  2xl:w-full object-cover"
+                  className="h-[30vh] imagen-transparente lg:h-[80vh] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  2xl:w-full object-cover"
                   alt="Estudio"
                 />
               </motion.div>
@@ -102,17 +102,25 @@ function HeroOne() {
                   tiempo de hacerlo. Nuestro equipo profesional de abogados se
                   encargará de:
                 </h3>
-                <p className="text-1xl lg:text-lg py-5 font-lato font-regular text-white">
-                  Gestionar en tiempo y forma los trámites necesarios para
-                  legalizar tus inmuebles.
-                </p>
-                <p className="text-1xl lg:text-lg font-lato font-regular text-white">
-                  Realizar la documentación legal para brindarte protección y
-                  tranquilidad.
-                </p>
-                <p className="text-1xl lg:text-lg font-lato font-regular text-white">
-                  Garantizar tus derechos como propietario.
-                </p>
+                <ul className="list-disc text-white">
+                  <li className="custom-disc">
+                    <p className="text-1xl lg:text-lg py-5 font-lato font-regular text-white">
+                      Gestionar en tiempo y forma los trámites necesarios para
+                      legalizar tus inmuebles.
+                    </p>{" "}
+                  </li>
+                  <li className="custom-disc">
+                    <p className="text-1xl  mb-3 lg:text-lg font-lato font-regular text-white">
+                      Realizar la documentación legal para brindarte protección
+                      y tranquilidad.
+                    </p>
+                  </li>
+                  <li className="custom-disc">
+                    <p className="text-1xl lg:text-lg font-lato font-regular text-white">
+                      Garantizar tus derechos como propietario.
+                    </p>
+                  </li>
+                </ul>
               </motion.div>
             </div>
           </div>
