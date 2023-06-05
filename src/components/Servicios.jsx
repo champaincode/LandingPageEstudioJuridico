@@ -20,9 +20,6 @@ const Card = ({ title, description }) => (
 );
 
 function Servicios() {
-  //   const [ref, inView] = useInView({
-  //   threshold: 0.5,
-  // });
   return (
     <section className="h-[400vh] xl:h-[150vh] md:h-[130vh]  lg:h-[130vh]   bg-gray mb-5 ">
       <div>
@@ -31,6 +28,7 @@ function Servicios() {
             variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
+            id="serviceonfooter"
             viewport={{ once: false, amount: 0.3 }}
             className="text-4xl font-bold   text-center text-blue-100 pt-[120px]   "
           >

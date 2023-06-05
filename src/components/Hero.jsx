@@ -9,17 +9,17 @@ function Hero() {
       id="inicio"
       className="2xl:hero md:hero lg:hero xl:hero  bg-gray lg:h-[100vh]  2xl:h-[100vh] xl:h-[150vh] h-[150vh] sm:h-[100vh] max-w-screen overflow-hidden"
     >
-      <div className="pt-4 gap-4  z-0 max-w-screen-2xl justify-center  items-center flex flex-col-reverse ajuste sm:flex-row-reverse  md:flex-row-reverse lg:h-[800px] h-[880px] ">
+      <div className="hero-content w-screen lg:ml-10  xl:w-[80%]  2xl:w-[100%] flex flex-col-reverse sm:flex-col-reverse justify-between md:flex-row-reverse  lg:h-[800px] h-[750px] ">
         <motion.div
           variants={fadeIn("left", 0.5)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="w-full sm:h-[50vh] md:h-[60vh] 2xl:mb-10 xl:h-[100vh] xl:mb-12 lg:w-full  lg:3/4 xl:w-3/4 2xl:w-full 2xl:h-[100vh] "
+          className="w-full   lg:w-[100%] lg:h-[100%]  2xl:h-3/4 2xl:w-[100%] xl:w-3/4 "
         >
           <img
             src={Imagen}
-            className="h-full w-full  xl:w-[100%] 2xl:h-[100%] "
+            className="h-[40vh]  lg:h-[80%] md:h-[50vh] lg:w-[500px] 2xl:h-full lg:mt-12   2xl:w-full object-cover"
             alt="Estudio"
           />
         </motion.div>
@@ -28,16 +28,16 @@ function Hero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="w-full  lg:w-1/2 xl:h-[200px]flex flex-col md:flex justify-center items-start p-5"
+          className="w-full  lg:w-1/2  xl:h-[200px] flex flex-col md:flex justify-center items-start p-5"
         >
           {" "}
-          <h2 className="text-3xl  mt-10 lg:text-4xl xl:text-5xl font-normal  font-sans leading-tight 2xl:text-6xl">
+          <h1 className="text-2xl lg:text-4xl xl:text-5xl font-normal  font-sans leading-tight 2xl:text-6xl">
             Estudio jurídico
-          </h2>
-          <h1 className="text-4xl  xl:mb-6 sm:text-5xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-8xl xl:py-0  font-bold text-blue-100 font-sans leading-tight ">
+          </h1>
+          <h2 className="text-3xl  xl:mb-6 sm:text-5xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-8xl xl:py-0  font-bold text-blue-100 font-sans leading-tight ">
             Hacemos <br /> simple tu
             <br /> escrituración
-          </h1>
+          </h2>
           <p className="text-xl xl:py-2 xl:mb-6 lg:text-2xl py-5 font-lato font-regular leading-relaxed 2xl:text-4xl text-blue-100">
             ¡No te preocupes de más! Asesorate con nuestro equipo de abogados.
           </p>

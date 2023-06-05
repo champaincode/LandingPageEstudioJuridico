@@ -32,7 +32,7 @@ function HeroOne() {
               >
                 <img
                   src={ImageHero}
-                  className="h-[40vh]  lg:h-[80vh] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  2xl:w-full object-cover"
+                  className="h-[40vh]   lg:h-[80vh] md:h-[50vh] lg:w-full 2xl:h-full lg:mt-12  2xl:w-full object-cover"
                   alt="Estudio"
                 />
               </motion.div>
