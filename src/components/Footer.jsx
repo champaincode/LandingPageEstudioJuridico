@@ -102,8 +102,8 @@ function Footer() {
       <div>
         <span className="footer-title">Dirección</span>
         <p className="">
-          Lavalle 1567/69, segundo piso. <br></br> Cuidad Autónoma de Buenos
-          Aires, Argentina{" "}
+          Av. Libertador 999999 <br></br> Cuidad Autónoma de Buenos Aires,
+          Argentina{" "}
         </p>
       </div>
     </footer>

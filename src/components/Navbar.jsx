@@ -78,7 +78,7 @@ function Navbar() {
             scrollPosition > 100 ? "text-gray" : "text-stone"
           }`}
         >
-          Estudio Veritas
+          Estudio Juridico
         </a>
       </div>
       <div className="navbar-end hidden lg:flex">
